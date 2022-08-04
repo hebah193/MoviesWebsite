@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Show Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <!--Navbar-->
+
+    <header>
+        <a href="#" class="logo">
+            <i class="bx bxs-movie"></i> Movies
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!--Menu-->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a>></li>
+            <li><a href="#movies">Movies</a>></li>
+            <li><a href="#coming">Coming</a>></li>
+            <li><a href="#newsletter">Newsletter</a>></li>
+        </ul>
+        <a href="#" class="btn">sign In</a>
+
+    </header>
+    <section>
+        <div class="container">
+            <h1>Unlimited films, TV
+                <br> programmes and more.
+            </h1>
+            <form id="searchForm">
+                <input type="text" placeholder="TV Show Title" name="query" class="search-bar">
+                <button id="searchBt"><i class='bx bx-search'></i> Search </button>
+            </form>
+        </div>
+        <div id="moviesShow">
+            <ul id="list">
+
+            </ul>
+
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
